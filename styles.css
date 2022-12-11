@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;800&display=swap');
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background: url('images/bg-pattern-top-desktop.svg') left top no-repeat, url('images/bg-pattern-bottom-desktop.svg') right bottom no-repeat;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 500;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: 600;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-container p {
+  color: hsl(303, 10%, 53%);
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.left-container {
+  max-width: 55vh;
+}
+
+.reviews {
+  background-color: #f7f2f8;
+  padding: 20px 30px;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: hsl(300, 43%, 22%);
+}
+
+.bottom-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.cards h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.cards-style {
+  border-radius: 10px;
+  background-color: hsl(300, 43%, 22%);
+  max-width: 35vh;
+  padding: 35px;
+  line-height: 1.2;
+}
+
+.second-card {
+  margin-top: 30px;
+}
+
+.third-card {
+  margin-top: 60px;
+}
+
+.cards-style p {
+  color: white;
+}
+
+.cards img {
+  border-radius: 50%;
+  width: 74px;
+  height: 89px;
+}
+
+.left-container h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .top-container {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .bottom-container {
+    flex-wrap: wrap;
+  }
+
+  .second-card, .third-card {
+    margin: 0;
+  }
+
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background: url('images/bg-pattern-top-mobile.svg') left top no-repeat, url('images/bg-pattern-bottom-mobile.svg') right bottom no-repeat;
+  }
+  .bottom-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .top-container {
+    flex-direction: column;
+  }
+
+  .second-card, .third-card {
+    margin: 0;
+  }
+
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
